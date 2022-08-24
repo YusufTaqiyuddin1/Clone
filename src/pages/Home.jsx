@@ -1,7 +1,7 @@
-import Header from "../components/main/Header";
-import SideBar from "../components/main/SideBar";
-import Main from "../components/main/Content";
-import FooterContent from "../components/main/Footer";
+import Header from "../components/Header/index";
+import SideBar from "../components/SideBar/index";
+import Main from "../components/Content/index";
+// import FooterContent from "../components/Footer/index";
 
 import { Layout } from "antd";
 
@@ -9,10 +9,10 @@ export default function Home(){
     return (
       <Layout>
         <SideBar />
-        <Layout>
+        <Layout style={{ backgroundColor: "#16161a" }}>
           <Header />
           <Main />
-          <FooterContent />
+          {/* <FooterContent /> */}
         </Layout>
       </Layout>
     );

@@ -1,23 +1,10 @@
-import {
-  EyeOutlined,
-//   EyeFilled,
-  RocketOutlined,
-  DownOutlined,
-  UserOutlined,
-  QuestionCircleOutlined,
-  InfoCircleOutlined,
-} from "@ant-design/icons";
 import { Menu } from "antd";
 import React, { useState } from "react";
-import {
-  Button,
-  Input,
-  Dropdown,
-  Space,
-  message,
-  PageHeader,
-  Tooltip,
-} from "antd";
+import {Button, Input, Dropdown, Space, message, PageHeader, Tooltip} from "antd";
+import {EyeOutlined, RocketOutlined, DownOutlined, UserOutlined, QuestionCircleOutlined, InfoCircleOutlined} from "@ant-design/icons"; //   EyeFilled,
+
+// style
+import "./style.css";
 
 const handleMenuClick = (e) => {
   message.info("Click on menu item.");
@@ -48,11 +35,11 @@ const menu = (
 );
 
 export default function Header() {
-
-  const [Icons] = useState({ // , setIcons
+  const [Icons] = useState({
+    // , setIcons
     icons: [
       <Dropdown overlay={menu} trigger="click">
-        <Button>
+        <Button className="headerButton">
           <Space>
             <RocketOutlined />
             Button
@@ -62,7 +49,7 @@ export default function Header() {
       </Dropdown>,
 
       <Dropdown overlay={menu} trigger="click">
-        <Button>
+        <Button className="headerButton">
           <Space>
             USD
             <DownOutlined />
@@ -71,7 +58,7 @@ export default function Header() {
       </Dropdown>,
 
       <Dropdown overlay={menu} trigger="click">
-        <Button>
+        <Button className="headerButton">
           <Space>
             <QuestionCircleOutlined />
             <DownOutlined />
@@ -79,7 +66,7 @@ export default function Header() {
         </Button>
       </Dropdown>,
 
-      <Button>
+      <Button className="headerButton">
         <EyeOutlined />
       </Button>,
     ],
@@ -87,23 +74,12 @@ export default function Header() {
 
   return (
         <PageHeader
-          style={{ margin: "12px 200px" }} // background: "#16161a"
+        className="pageHeader"
           ghost={false}
           // title="Title"
-          subTitle={
-            <Input
-              placeholder="Search by token, wallet, ENS"
-              style={{ width: "350px" }}
-              suffix={
-                <Tooltip title="Extra information">
-                  <InfoCircleOutlined style={{ color: "rgba(0,0,0,.45)" }} />
-                </Tooltip>
-              }
-            />
-          } // loading
+          subTitle={<Input className="searchInput" placeholder="Search by token, wallet, ENS" />} // loading
           extra={Icons.icons}
         >
-
         </PageHeader>
   );
 }
