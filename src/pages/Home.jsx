@@ -8,7 +8,7 @@ import { Layout } from "antd";
 export default function Home(){
     return (
       <Layout>
-        <SideBar />
+        <SideBar/>
         <Layout style={{ backgroundColor: "#16161a" }}>
           <Header />
           <Main />

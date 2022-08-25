@@ -18,35 +18,34 @@ import {
 import "../index.css";
 
 const { Text, Link, Title } = Typography;
-
-export default function Content1() {
-  const [datas, setData] = useState([
+export default function Content3() {
+  const [datas1, setData1] = useState([
     {
       id: "1",
-      name: "DeFi Pulse",
-      icon: "https://token-icons.s3.amazonaws.com/0x1494ca1f11d487c2bbe4543e90080aeba4ba3c2b.png",
-      price: "24.03",
-      market: "↑",
-      marketPrice: "0.52",
-      color: "#4fbf67",
-    },
-    {
-      id: "2",
-      name: "Metaverse Index",
-      icon: "https://token-icons.s3.amazonaws.com/0x72e364f2abdc788b7e918bc238b21f109cd634d7.png",
-      price: "43,12",
+      name: "Decentraland MANA",
+      icon: "https://token-icons.s3.amazonaws.com/0x0f5d2fb29fb7d3cfee444a200298f468908cc942.png",
+      price: "0.83",
       market: "↓",
-      marketPrice: "0.20",
+      marketPrice: "0.17",
       color: "#ff5c5c",
     },
     {
-      id: "3",
-      name: "total Crypto Market Cap",
-      icon: "https://token-icons.s3.amazonaws.com/0x16c52ceece2ed57dad87319d91b5e3637d50afa4.png",
-      price: "120,60",
+      id: "2",
+      name: "SAND",
+      icon: "https://token-icons.s3.amazonaws.com/0x3845badade8e6dff049820680d1f14bd3903a5d0.png",
+      price: "1.05",
       market: "↑",
-      marketPrice: "0.47",
+      marketPrice: "0.04",
       color: "#4fbf67",
+    },
+    {
+      id: "3",
+      name: "chiliZ",
+      icon: "https://token-icons.s3.amazonaws.com/0x3506424f91fd33084466f402d5d97f05f8e3b4af.png",
+      price: "0.24",
+      market: "↓",
+      marketPrice: "0.12",
+      color: "#ff5c5c",
     },
   ]);
 
@@ -59,13 +58,13 @@ export default function Content1() {
           color: "#fff",
         }}
       >
-        DeFi Indexes
+        Non-Fungible Token (NFT) Protocols
       </Typography.Title>
 
       <Text
         style={{ margin: "32px 0 12px 0", color: "#70737b", fontWeight: "550" }}
       >
-        Tokenized baskets of high quality DeFi projects
+        Protocols representing digital assets and collectibles with unique characteristic
       </Text>
       <Link
         href="https://ant.design"
@@ -74,13 +73,12 @@ export default function Content1() {
       >
         See all
       </Link>
-
       <div className="site-card-wrapper" style={{ marginTop: "24px" }}>
         <Row gutter={16}>
-          {datas.map((data) => {
+          {datas1.map((data) => {
             return (
               <Col span={8}>
-                <Card bordered={false} className="Card">
+                <Card className="Card" bordered={false}>
                   <Avatar
                     style={{ verticalAlign: "middle" }}
                     size="large"

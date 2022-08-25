@@ -23,8 +23,8 @@ export default function Content1() {
   const [datas, setData] = useState([
     {
       id: "1",
-      name: "DeFi Pulse",
-      icon: "https://token-icons.s3.amazonaws.com/0x1494ca1f11d487c2bbe4543e90080aeba4ba3c2b.png",
+      name: "Polygon (Matic)",
+      icon: "https://token-icons.s3.amazonaws.com/0x7d1afa7b718fb893db30a3abc0cfc608aacfebb0.png",
       price: "24.03",
       market: "↑",
       marketPrice: "0.52",
@@ -32,8 +32,8 @@ export default function Content1() {
     },
     {
       id: "2",
-      name: "Metaverse Index",
-      icon: "https://token-icons.s3.amazonaws.com/0x72e364f2abdc788b7e918bc238b21f109cd634d7.png",
+      name: "LoopringCoin v2",
+      icon: "https://token-icons.s3.amazonaws.com/0xbbbbca6a901c926f240b89eacb641d8aec7aeafd.png",
       price: "43,12",
       market: "↓",
       marketPrice: "0.20",
@@ -41,8 +41,8 @@ export default function Content1() {
     },
     {
       id: "3",
-      name: "total Crypto Market Cap",
-      icon: "https://token-icons.s3.amazonaws.com/0x16c52ceece2ed57dad87319d91b5e3637d50afa4.png",
+      name: "OMG Network",
+      icon: "https://s3.amazonaws.com/token-icons/0xd26114cd6ee289accf82350c8d8487fedb8a0c07.png",
       price: "120,60",
       market: "↑",
       marketPrice: "0.47",
@@ -59,13 +59,13 @@ export default function Content1() {
           color: "#fff",
         }}
       >
-        DeFi Indexes
+        Layer-2 Scaling Tokens
       </Typography.Title>
 
       <Text
         style={{ margin: "32px 0 12px 0", color: "#70737b", fontWeight: "550" }}
       >
-        Tokenized baskets of high quality DeFi projects
+        Tokens building second layer networks to scale Ethereum
       </Text>
       <Link
         href="https://ant.design"
