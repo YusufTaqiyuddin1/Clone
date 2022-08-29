@@ -13,6 +13,7 @@ import {
 import { Layout, Menu } from "antd";
 import React, { useState } from "react";
 import { ConnectButton } from "@rainbow-me/rainbowkit";
+import "./style.css";
 
 const {  Sider } = Layout;
 
@@ -39,6 +40,7 @@ export default function SideBar() {
 
   return (
     <Sider
+    className="sider"
       width={240}
       breakpoint="lg"
       collapsedWidth="0"
@@ -48,9 +50,8 @@ export default function SideBar() {
       onCollapse={(collapsed, type) => {
         console.log(collapsed, type);
       }}
-      style={{ backgroundColor: "#1d1d21" }}
     >
-      <div className="profile" style={{ backgroundColor: "#1d1d21" }}>
+      <div className="profile">
         <img
           src={"/img/logo/full-primary.svg"}
           alt="./logo"
@@ -61,12 +62,7 @@ export default function SideBar() {
           Connect an Etherium wallet
           <br /> to manage your DeFi portofolio
         </p>
-        <div
-          style={{
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-          }}
+        <div className="connectButton"
         >
           <ConnectButton
             chainStatus="none"
@@ -76,10 +72,9 @@ export default function SideBar() {
         </div>
       </div>
       <Menu
-        style={{ backgroundColor: "#1d1d21" }}
-        theme="dark"
+      className="siderMenu"
         mode="inline"
-        defaultSelectedKeys={["1"]}
+        // defaultSelectedKeys={["1"]}
         items={Wallet.items}
       />
     </Sider>

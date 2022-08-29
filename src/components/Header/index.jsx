@@ -1,10 +1,10 @@
-import { Menu } from "antd";
+import { Layout, Menu } from "antd";
 import React, { useState } from "react";
 import {Button, Input, Dropdown, Space, message, PageHeader, Tooltip} from "antd";
 import {EyeOutlined, RocketOutlined, DownOutlined, UserOutlined, QuestionCircleOutlined, InfoCircleOutlined} from "@ant-design/icons"; //   EyeFilled,
 
 // style
-import "./style.css";
+import "./index.css";
 
 const handleMenuClick = (e) => {
   message.info("Click on menu item.");
@@ -73,13 +73,17 @@ export default function Header() {
   });
 
   return (
-        <PageHeader
+      <PageHeader
         className="pageHeader"
-          ghost={false}
-          // title="Title"
-          subTitle={<Input className="searchInput" placeholder="Search by token, wallet, ENS" />} // loading
-          extra={Icons.icons}
-        >
-        </PageHeader>
+        ghost={false}
+        // title="Title"
+        subTitle={
+          <Input
+            className="searchInput"
+            placeholder="Search by token, wallet, ENS"
+          />
+        } // loading
+        extra={Icons.icons}
+      ></PageHeader>
   );
 }

@@ -7,6 +7,12 @@ import { chain, configureChains, createClient, WagmiConfig } from "wagmi";
 import { alchemyProvider } from "wagmi/providers/alchemy";
 import { publicProvider } from "wagmi/providers/public";
 
+import { createContext, useState } from "react";
+import { Switch } from 'antd';
+
+
+export const ThemeContext = createContext(null);
+
 const { chains, provider } = configureChains(
   [chain.mainnet, chain.polygon, chain.optimism, chain.arbitrum],
   [alchemyProvider({ alchemyId: process.env.ALCHEMY_ID }), publicProvider()]
@@ -24,12 +30,27 @@ const wagmiClient = createClient({
 });
 
 export default function App() {
+  const [theme, setTheme] = useState("dark");
+
+  const toggleTheme = () => {
+    setTheme((curr) => (curr === "light" ? "dark" : "light"));
+  };
   return (
-    <WagmiConfig client={wagmiClient}>
-      <RainbowKitProvider chains={chains}>
-        <Home />
-      </RainbowKitProvider>
-    </WagmiConfig>
+    <ThemeContext.Provider value={[theme, toggleTheme]}>
+      <div className="App" id={theme}>
+        <WagmiConfig client={wagmiClient}>
+          <RainbowKitProvider chains={chains}>
+            <Switch
+              onChange={toggleTheme}
+              checked={theme === "dark"}
+              checkedChildren="Dark Mode"
+              unCheckedChildren="Light Mode"
+            />
+            <Home />
+          </RainbowKitProvider>
+        </WagmiConfig>
+      </div>
+    </ThemeContext.Provider>
   );
 }
 

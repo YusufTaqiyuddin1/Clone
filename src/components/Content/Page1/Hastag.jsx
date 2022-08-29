@@ -124,10 +124,6 @@ export default function Content1() {
     <>
       <Typography.Title
         level={2}
-        style={{
-          margin: "32px 0 4px 0",
-          color: "#fff",
-        }}
       >
         All Tags
       </Typography.Title>
@@ -137,14 +133,6 @@ export default function Content1() {
             return (
               <Button
                 type="link"
-                style={{
-                  backgroundColor: "transparent",
-                  margin: "8px",
-                  borderRadius: "8px",
-                  color: "#fff",
-                  border: "1px solid #70737b",
-                  fontWeight: "700",
-                }}
               >
                 <span
                   style={{

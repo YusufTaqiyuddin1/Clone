@@ -9,28 +9,17 @@ import Content4 from "./Page1/Content-4";
 import Content5 from "./Page1/Content-5";
 import Hastag from "./Page1/Hastag";
 
+import "./index.css";
+
 const {Content} = Layout;
 
 export default function Main() {
 
   return (
     <Content
-      style={{
-        // margin: "12px 200px",
-        maxWidth: "960px",
-        minWidth: "960px",
-        margin: "auto",
-        alignItems: "center",
-        justifyContent: "center",
-      }}
     >
       <div
         className="site-layout-background"
-        style={{
-          padding: 24,
-          minHeight: 1024,
-          backgroundColor: "#16161a",
-        }}
       >
         <Header />
         <Content1 />

@@ -4,12 +4,13 @@ import Main from "../components/Content/index";
 // import FooterContent from "../components/Footer/index";
 
 import { Layout } from "antd";
+import "./index.css";
 
 export default function Home(){
     return (
       <Layout>
         <SideBar/>
-        <Layout style={{ backgroundColor: "#16161a" }}>
+        <Layout className="layout">
           <Header />
           <Main />
           {/* <FooterContent /> */}

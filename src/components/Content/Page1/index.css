@@ -1,0 +1,68 @@
+#dark h2.ant-typography,
+h1.ant-typography {
+  color: #fff;
+  margin: 32px 0 4px 0;
+}
+
+#dark span.ant-typography {
+  margin: 32px 0 12px 0;
+  color: #70737b;
+  font-weight: 550;
+}
+/* #dark .ant-card.Card{
+    border: 1px solid #e6ebf1;
+    background-color: #fff;
+} */
+
+#dark .cardSubtitle {
+  color: #fff;
+  margin-left: 8px;
+  font-weight: 600;
+}
+
+#dark .ant-btn.ant-btn-link {
+  background-color: transparent;
+  margin: 8px;
+  border-radius: 8px;
+  color: #fff;
+  border: 1px solid #70737b;
+  background-color: transparent;
+  font-weight: 700;
+}
+
+#light h2.ant-typography,
+h1.ant-typography {
+  color: #000;
+  margin: 32px 0 4px 0;
+}
+
+#dark h1.ant-typography{
+    color: #fff
+}
+
+#light span.ant-typography {
+  margin: 32px 0 12px 0;
+  color: #70737b;
+  font-weight: 550;
+}
+
+#light .ant-btn.ant-btn-link {
+  background-color: transparent;
+  margin: 8px;
+  border-radius: 8px;
+  color: black;
+  border: 1px solid #e6ebf1;
+  background-color: #fff;
+  font-weight: 700;
+}
+
+#light .ant-card.Card{
+    border: 1px solid #e6ebf1;
+    background-color: #fff;
+}
+
+#light .cardSubtitle {
+  color: black;
+  margin-left: 8px;
+  font-weight: 600;
+}

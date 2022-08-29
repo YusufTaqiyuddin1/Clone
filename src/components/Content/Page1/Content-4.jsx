@@ -16,6 +16,7 @@ import {
 } from "@ant-design/icons";
 
 import "../index.css";
+import "./index.css";
 
 const { Text, Link, Title } = Typography;
 
@@ -54,16 +55,11 @@ export default function Content1() {
     <>
       <Typography.Title
         level={2}
-        style={{
-          margin: "32px 0 4px 0",
-          color: "#fff",
-        }}
       >
         Layer-2 Scaling Tokens
       </Typography.Title>
 
       <Text
-        style={{ margin: "32px 0 12px 0", color: "#70737b", fontWeight: "550" }}
       >
         Tokens building second layer networks to scale Ethereum
       </Text>
@@ -87,19 +83,11 @@ export default function Content1() {
                     gap={4}
                     src={data.icon}
                   />
-                  <span
-                    style={{
-                      color: "#fff",
-                      marginLeft: "8px",
-                      fontWeight: "600",
-                    }}
-                  >
-                    {data.name}
-                  </span>
+                  <span className="cardSubtitle">{data.name}</span>
                   <p style={{ margin: "24px 0 0 0", color: "#70737b" }}>
                     Price
                   </p>
-                  <Title level={2} style={{ color: "#fff" }}>
+                  <Title level={2} style={{ margin: 0 }}>
                     ${data.price}
                     <Title
                       level={5}
