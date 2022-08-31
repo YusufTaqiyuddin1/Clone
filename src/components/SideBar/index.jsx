@@ -14,8 +14,8 @@ import { Layout, Menu } from "antd";
 import React, { useState } from "react";
 import { ConnectButton } from "@rainbow-me/rainbowkit";
 import "./style.css";
-
-const {  Sider } = Layout;
+import { Outlet, Link } from "react-router-dom";
+const { Sider } = Layout;
 
 function getItem(label, key, icon, children) {
   return {
@@ -27,20 +27,48 @@ function getItem(label, key, icon, children) {
 }
 
 export default function SideBar() {
-  const [Wallet] = useState({ // , setWallet
+  const [collapsed, setCollapsed] = useState(true);
+
+  const changeMenu = () => {
+    if (window.width() < 1200) {
+      setCollapsed(!collapsed);
+    } else {
+      setCollapsed(collapsed);
+    }
+  };
+  window.addEventListener("resize", changeMenu);
+
+  const [Wallet] = useState({
+    // , setWallet
     items: [
       // getItem("Overview", "1", <EyeOutlined />),
-      getItem("Explore", "1", <CompassOutlined />),
-      getItem("Favorites", "2", <StarOutlined />),
+      getItem(
+        <Link to="explore">
+          <CompassOutlined /> Explore
+        </Link>
+      ),
+      getItem(
+        <Link to="favorite">
+          <StarOutlined /> Favorites
+        </Link>
+      ),
       // getItem("Send", "4", <SendOutlined />),
-      getItem("Swap", "3", <SwapOutlined />),
-      getItem("Setting", "4", <SettingOutlined />),
+      getItem(
+        <Link to="swap">
+          <SwapOutlined /> Swap
+        </Link>
+      ),
+      getItem(
+        <Link to="setting">
+          <SettingOutlined /> Setting
+        </Link>
+      ),
     ],
   });
 
   return (
     <Sider
-    className="sider"
+      className="sider"
       width={240}
       breakpoint="lg"
       collapsedWidth="0"
@@ -62,8 +90,7 @@ export default function SideBar() {
           Connect an Etherium wallet
           <br /> to manage your DeFi portofolio
         </p>
-        <div className="connectButton"
-        >
+        <div className="connectButton">
           <ConnectButton
             chainStatus="none"
             showBalance={true}
@@ -72,11 +99,12 @@ export default function SideBar() {
         </div>
       </div>
       <Menu
-      className="siderMenu"
+        className="siderMenu"
         mode="inline"
+        inlineCollapsed={collapsed}
         // defaultSelectedKeys={["1"]}
         items={Wallet.items}
       />
     </Sider>
   );
-};
+}

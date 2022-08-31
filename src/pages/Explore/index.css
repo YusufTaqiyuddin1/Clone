@@ -1,0 +1,8 @@
+main.ant-layout-content{
+  /* background-color: #16161A; */
+  max-width: 960px;
+  min-width: 960px;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+}

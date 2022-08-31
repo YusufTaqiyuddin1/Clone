@@ -1,5 +1,5 @@
-import './App.css';
-import Home from "./pages/Home";
+import "./App.css";
+// import Home from "./pages/Home";
 
 import "@rainbow-me/rainbowkit/styles.css";
 import { getDefaultWallets, RainbowKitProvider } from "@rainbow-me/rainbowkit";
@@ -8,8 +8,11 @@ import { alchemyProvider } from "wagmi/providers/alchemy";
 import { publicProvider } from "wagmi/providers/public";
 
 import { createContext, useState } from "react";
-import { Switch } from 'antd';
+import { Switch } from "antd";
 
+import "./App.css";
+
+import MainRoutes from "./router/index";
 
 export const ThemeContext = createContext(null);
 
@@ -29,12 +32,39 @@ const wagmiClient = createClient({
   provider,
 });
 
-export default function App() {
+// export default function App() {
+//   const [theme, setTheme] = useState("dark");
+
+//   const toggleTheme = () => {
+//     setTheme((curr) => (curr === "light" ? "dark" : "light"));
+//   };
+//   return (
+//     <ThemeContext.Provider value={[theme, toggleTheme]}>
+//       <div className="App" id={theme}>
+//         <WagmiConfig client={wagmiClient}>
+//           <RainbowKitProvider chains={chains}>
+//             <Switch
+//               onChange={toggleTheme}
+//               checked={theme === "dark"}
+//               checkedChildren="Dark Mode"
+//               unCheckedChildren="Light Mode"
+//             />
+//             <Home />
+//           </RainbowKitProvider>
+//         </WagmiConfig>
+//       </div>
+//     </ThemeContext.Provider>
+//   );
+// }
+
+
+const App = () => {
   const [theme, setTheme] = useState("dark");
 
   const toggleTheme = () => {
     setTheme((curr) => (curr === "light" ? "dark" : "light"));
   };
+  
   return (
     <ThemeContext.Provider value={[theme, toggleTheme]}>
       <div className="App" id={theme}>
@@ -46,12 +76,12 @@ export default function App() {
               checkedChildren="Dark Mode"
               unCheckedChildren="Light Mode"
             />
-            <Home />
+            <MainRoutes />
           </RainbowKitProvider>
         </WagmiConfig>
       </div>
     </ThemeContext.Provider>
   );
-}
+};
 
-
+export default App;

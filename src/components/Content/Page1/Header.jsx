@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import { Card, Col, Row } from "antd";
-import { Typography } from "antd";
+import { Card, Col, Row, Typography } from "antd";
 import "./index.css";
 
 export default function Header() {

@@ -11,7 +11,7 @@
 #dark div.site-layout-background {
     background-color: #16161A;
   padding: 24px;
-  min-height: 1024;
+  min-height: 1024px;
 }
 
 #dark main.ant-layout-content{
@@ -27,7 +27,7 @@
 #light div.site-layout-background {
   background-color: #fafafb;
   padding: 24px;
-  min-height: 1024;
+  min-height: 1024px;
 }
 
 #light main.ant-layout-content{

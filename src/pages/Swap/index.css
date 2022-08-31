@@ -1,0 +1,163 @@
+#dark .ant-card.ant-card-bordered {
+  border: 1px solid #2d2d32;
+  border-radius: 8px;
+  background-color: transparent;
+}
+
+#dark .ant-card.ant-card-bordered.swapCard{
+background-color: #1d1d21;
+margin-top: 4px;
+}
+
+#dark div.ant-card-head {
+  border: none;
+}
+
+#dark .ant-btn.ant-btn-default.ant-dropdown-trigger {
+  background-color: transparent;
+  border: none;
+}
+
+#dark .ant-space.ant-space-horizontal.ant-space-align-center {
+  color: #fff;
+}
+
+#dark .ant-card-extra a {
+  color: #fff;
+}
+
+#dark .ant-card-body {
+  color: #fff;
+}
+
+#dark .ant-input-number-input {
+  text-align: right;
+  /* background-color: transparent; */
+}
+
+#dark .ant-input-number {
+  background-color: transparent;
+  color: #fff;
+}
+
+#dark .ant-btn.ant-btn-primary.ant-btn-block.buttonSwap:disabled {
+  background-color: #264688;
+  margin-top: 24px;
+  color: #93b3f5;
+  border: none;
+  font-weight: bold;
+}
+
+#dark .ant-btn.ant-btn-circle.ant-btn-default {
+  background-color: #1d1d21;
+  color:#70737b;
+  border-radius: 20px;
+  border: 4px solid #16161a;
+  position: absolute;
+  top: calc(50% - 14px);
+  left: calc(50% - 20px);
+  width: 40px;
+  height: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  transform: rotate(90deg);
+  align-items: center;
+  justify-content: center;
+}
+
+#dark .ant-input-number.ant-input-number-borderless{
+width: 290px;
+}
+
+#dark .ant-input-number.ant-input-number-borderless{
+width: 290px;
+font-size: 24px;
+}
+
+#dark .ant-typography.textSwap{
+  color: #fff;
+}
+
+#light .ant-card.ant-card-bordered {
+  border: 1px solid #e6ebf1;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+#light div.ant-card-head {
+  border: none;
+}
+
+#light .ant-btn.ant-btn-default.ant-dropdown-trigger {
+  background-color: transparent;
+  border: none;
+}
+
+#light .ant-space.ant-space-horizontal.ant-space-align-center {
+  color: #000;
+}
+
+#light .ant-card-extra a {
+  color: #000;
+}
+
+#light .ant-card-body {
+  color: #000;
+}
+
+#light .ant-input-number-input {
+  text-align: right;
+}
+
+#light .ant-btn.ant-btn-default.ant-dropdown-trigger {
+  text-align: start;
+}
+
+#light .ant-card.ant-card-bordered{
+  background-color: #fff;
+}
+
+#light .ant-card.ant-card-bordered.swapCard{
+background-color: #f5f5f7;
+margin-top: 4px;
+}
+
+#light .ant-btn.ant-btn-primary.ant-btn-block.buttonSwap:disabled {
+  background-color: #264688;
+  margin-top: 24px;
+  color: #93b3f5;
+  border: none;
+  font-weight: bold;
+}
+
+#light .ant-btn.ant-btn-circle.ant-btn-default {
+  background-color: #fff;
+  color:#70737b;
+  border-radius: 20px;
+  border: 4px solid #fafafa;
+  position: absolute;
+  top: calc(50% - 14px);
+  left: calc(50% - 20px);
+  width: 40px;
+  height: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  transform: rotate(90deg);
+  align-items: center;
+  justify-content: center;
+}
+
+#light .ant-input-number.ant-input-number-borderless{
+width: 290px;
+font-size: 24px;
+}
+
+#light .ant-typography.textSwap{
+  color: #000;
+}

@@ -1,0 +1,123 @@
+#light .ant-card.setting {
+  background-color: transparent;
+}
+
+#dark .ant-card.setting {
+  background-color: transparent;
+}
+
+#light .ant-card-head-title {
+  color: #000;
+}
+
+#dark .ant-card-head-title {
+  color: #fff;
+}
+
+#light .ant-card-head-title {
+  border-bottom: 2px solid #e6ebf1;
+}
+
+#dark .ant-card-head-title {
+  border-bottom: 2px solid #2d2d32;
+}
+
+/* #light .ant-space.ant-space-horizontal.ant-space-align-start {
+  background-color: red;
+} */
+
+#light .changeLang {
+  width: 100%;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  border-radius: 10px;
+  margin-top: 24px;
+}
+
+#dark .changeLang {
+  width: 100%;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  border-radius: 10px;
+  margin-top: 24px;
+}
+
+#light .changeLang:hover {
+  background-color: #e6ebf1;
+}
+
+#dark .changeLang:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+#light .ant-btn.ant-btn-primary.ant-btn-block {
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+  color: #000;
+  font-weight: 600;
+}
+
+#dark .ant-btn.ant-btn-primary.ant-btn-block {
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+  color: #fff;
+  font-weight: 600;
+}
+
+#light .ant-space.ant-space-horizontal.ant-space-align-center {
+  width: 100%;
+  justify-content: space-between;
+}
+
+#dark .ant-space.ant-space-horizontal.ant-space-align-center {
+  width: 100%;
+  justify-content: space-between;
+}
+
+#light .ant-radio-group.ant-radio-group-outline label {
+  color: #000;
+}
+
+#dark .ant-radio-group.ant-radio-group-outline label {
+  color: #fff;
+}
+
+#light .ant-typography.languageText {
+  color: #000;
+  font-weight: lighter;
+}
+
+#dark .ant-typography.languageText {
+  color: #fff;
+  font-weight: lighter;
+}
+
+#light .ant-typography.privacyContent {
+  font-weight: lighter;
+}
+
+#dark .ant-typography.privacyContent {
+  font-weight: lighter;
+}
+
+#light .ant-typography.privacyTitle {
+  color: #000;
+}
+
+#dark .ant-typography.privacyTitle {
+  color: #fff;
+}
+
+#light .ant-card.ant-card-bordered.mobileApp .ant-card-body {
+  cursor: pointer;
+  padding: 0;
+}
+
+#dark .ant-card.ant-card-bordered.mobileApp .ant-card-body {
+  cursor: pointer;
+  padding: 0;
+}

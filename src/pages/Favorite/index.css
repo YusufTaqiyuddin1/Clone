@@ -1,0 +1,7 @@
+#dark .ant-typography{
+    color: #fff;
+}
+
+#light .ant-typography{
+    color: #000;
+}
