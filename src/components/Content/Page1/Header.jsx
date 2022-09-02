@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import { Card, Col, Row, Typography } from "antd";
 import "./index.css";
 
@@ -62,11 +63,13 @@ export default function Header() {
                   md={{ span: 6 }}
                   lg={{ span: 6 }}
                 >
-                  <Card bordered={false} style={data} hoverable>
-                    <span style={{ fontWeight: "bold", color: "#fff" }}>
-                      {data.name}
-                    </span>
-                  </Card>
+                  <Link to="../favorite">
+                    <Card bordered={false} style={data} hoverable>
+                      <span style={{ fontWeight: "bold", color: "#fff" }}>
+                        {data.name}
+                      </span>
+                    </Card>
+                  </Link>
                 </Col>
               );
             })}

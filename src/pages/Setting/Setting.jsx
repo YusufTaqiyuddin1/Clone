@@ -145,7 +145,7 @@ const Setting = () => {
             }}
           >
             <Space align="center" direction="vertical">
-              <Space align="center" direction="horizontal">
+              <Space align="center" direction="horizontal" size={40}>
                 <Space align="start" direction="vertical">
                   <Text className="privacyTitle">Minimal analytics</Text>
                   <Text className="privacyContent">
@@ -157,7 +157,7 @@ const Setting = () => {
                 <Switch defaultChecked onChange={onChange} />
               </Space>
 
-              <Space align="center" direction="horizontal">
+              <Space align="center" direction="horizontal" size={40}>
                 <Space align="start" direction="vertical">
                   <Text className="privacyTitle">App Usage Analytics</Text>
                   <Text className="privacyContent">
@@ -171,7 +171,7 @@ const Setting = () => {
                 <Switch onChange={onChange} />
               </Space>
 
-              <Space align="center" direction="horizontal">
+              <Space align="center" direction="horizontal" size={40}>
                 <Space align="start" direction="vertical">
                   <Text className="privacyTitle">Support Chat</Text>
                   <Text className="privacyContent">
@@ -236,7 +236,10 @@ const Setting = () => {
             }}
           >
             <Space align="start" direction="horizontal">
-              <Card className="mobileApp" style={{ padding: "12px", cursor: "pointer" }}>
+              <Card
+                className="mobileApp"
+                style={{ padding: "12px", cursor: "pointer" }}
+              >
                 <svg
                   width={160}
                   height={23}

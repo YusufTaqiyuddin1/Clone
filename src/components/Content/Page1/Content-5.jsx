@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import {
   Card,
   Col,
@@ -8,6 +9,8 @@ import {
   Avatar,
   List,
   Badge,
+  Space,
+  Button,
 } from "antd";
 import {
   SwapOutlined,
@@ -18,8 +21,8 @@ import {
 import "../index.css";
 import "./index.css";
 
-const { Text, Link, Title } = Typography;
-export default function Content3() {
+const { Text, Title } = Typography;
+export default function Content5() {
   const [datas1, setData1] = useState([
     {
       id: "1",
@@ -52,26 +55,74 @@ export default function Content3() {
 
   return (
     <>
-      <Typography.Title
-        level={2}
-      >
-        Social Tokens
-      </Typography.Title>
+      <Space align="start" direction="vertical" style={{ width: "100%" }}>
+        <Typography.Title level={2}>Social Tokens</Typography.Title>
+        <Space direction="horizontal">
+          <Text>
+            Tokens backed by the reputation of an individual, brand, or
+            community
+          </Text>
+          <Link to="../favorite" style={{ color: "#2962ef" }}>
+            See all
+          </Link>
+        </Space>
+      </Space>
 
-      <Text
-      
-      >
-        Tokens backed by the reputation of an individual, brand, or community
-      </Text>
-      <Link
-        href="https://ant.design"
-        target="_blank"
-        style={{ float: "right" }}
-      >
-        See all
-      </Link>
       <div className="site-card-wrapper" style={{ marginTop: "24px" }}>
-        <Row gutter={16}>
+        <Row gutter={[16, 8]}>
+          {datas1.map((data) => {
+            return (
+              <Col xs={24} sm={24} md={8} lg={8} xl={8}>
+                <Link to="../favorite">
+                  <Card className="Card" bordered={false}>
+                    <Space align="start" direction="vertical">
+                      <Space direction="horizontal">
+                        <Avatar
+                          style={{ verticalAlign: "middle" }}
+                          size="large"
+                          gap={4}
+                          src={data.icon}
+                        />
+                        <span className="cardSubtitle">{data.name}</span>
+                      </Space>
+                      <Space>
+                        <p style={{ margin: "24px 0 0 0", color: "#70737b" }}>
+                          Price
+                        </p>
+                      </Space>
+                      <Space align="end" direction="horizontal">
+                        <Title
+                          level={2}
+                          className="cardPrice"
+                          style={{ margin: 0 }}
+                        >
+                          ${data.price}
+                        </Title>
+                        <Title
+                          level={5}
+                          className="cardPricePercent"
+                          style={{
+                            // display: "inline",
+                            // marginLeft: "6px",
+                            color: data.color,
+                          }}
+                        >
+                          {data.market}
+                          {data.marketPrice}%
+                        </Title>
+                        <Button className="btnTrade" type="primary">
+                          Trade
+                        </Button>
+                      </Space>
+                    </Space>
+                  </Card>
+                </Link>
+              </Col>
+            );
+          })}
+        </Row>
+
+        {/* <Row gutter={16}>
           {datas1.map((data) => {
             return (
               <Col span={8}>
@@ -105,7 +156,7 @@ export default function Content3() {
               </Col>
             );
           })}
-        </Row>
+        </Row> */}
       </div>
     </>
   );

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import {
   Card,
   Col,
@@ -18,7 +19,7 @@ import {
 
 import "../index.css";
 
-const { Text, Link, Title } = Typography;
+const { Text, Title } = Typography;
 
 export default function Content1() {
   const [datas, setData] = useState([
@@ -131,8 +132,8 @@ export default function Content1() {
       <div className="site-card-wrapper" style={{ marginTop: "24px", marginBottom: "200px"}}>
         {datas.map((data) =>{
             return (
-              <Button
-                type="link"
+              <Link to="../favorite">
+              <Button className="btnHastag"
               >
                 <span
                   style={{
@@ -145,6 +146,7 @@ export default function Content1() {
                 </span>
                 {data.tag}
               </Button>
+              </Link>
             );
         })}
       </div>

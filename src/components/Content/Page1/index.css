@@ -17,16 +17,6 @@ h1.ant-typography {
   font-weight: 600;
 }
 
-#dark .ant-btn.ant-btn-link {
-  background-color: transparent;
-  margin: 8px;
-  border-radius: 8px;
-  color: #fff;
-  border: 1px solid #70737b;
-  background-color: transparent;
-  font-weight: 700;
-}
-
 #light h2.ant-typography,
 h1.ant-typography {
   color: #000;
@@ -43,13 +33,23 @@ h1.ant-typography {
   font-weight: 550;
 }
 
-#light .ant-btn.ant-btn-link {
+#light .ant-btn.ant-btn-default.btnHastag{
   background-color: transparent;
   margin: 8px;
   border-radius: 8px;
   color: black;
   border: 1px solid #e6ebf1;
   background-color: #fff;
+  font-weight: 700;
+}
+
+#dark .ant-btn.ant-btn-default.btnHastag {
+  background-color: transparent;
+  margin: 8px;
+  border-radius: 8px;
+  color: #fff;
+  border: 1px solid #70737b;
+  background-color: transparent;
   font-weight: 700;
 }
 
@@ -64,9 +64,43 @@ h1.ant-typography {
   font-weight: 600;
 }
 
-@media screen and (width<992px){
+#dark .ant-select.payWithSelect.ant-select-single.ant-select-show-arrow .ant-select-selector{
+  background-color: transparent;
+  border: none;
+  color: #fff;
+}
+
+
+/* #light .ant-card.Card{
+  background-color: red;
+} */
+
+/* #light h2.ant-typography{
+  color: blue;
+  text-align: end;
+} */
+
+
+/* @media screen and (width<992px){
 #dark .ant-card.Card{
     border: 1px solid #e6ebf1;
     background-color: #fff;
 }
+
 }
+
+@media screen and (width<768px){
+#light h2.ant-typography.cardPrice{
+  color: blue;
+  text-align: end;
+}
+#light h5.ant-typography.cardPricePercent.cardPricePercent{
+  color: blue;
+  text-align: bottom;
+  margin-top: 0;
+}
+
+#light .ant-space.ant-space-vertical.ant-space-align-start{
+  text-align: horizontal;
+}
+} */

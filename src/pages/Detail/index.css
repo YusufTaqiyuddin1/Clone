@@ -1,0 +1,143 @@
+#light .ant-layout-content.detailContent {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0px, 610px) 290px;
+  -webkit-box-align: start;
+  align-items: start;
+  gap: 28px;
+}
+
+#dark .ant-layout-content.detailContent {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0px, 610px) 290px;
+  -webkit-box-align: start;
+  align-items: start;
+  gap: 28px;
+}
+
+#light
+  .ant-space.ant-space-horizontal.ant-space-align-center.iconLink
+  .ant-space-item
+  .ant-avatar.ant-avatar-lg.ant-avatar-circle.ant-avatar-icon {
+  line-height: 42px;
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #e6ebf1;
+  cursor: pointer;
+}
+
+#dark
+  .ant-space.ant-space-horizontal.ant-space-align-center.iconLink
+  .ant-space-item
+  .ant-avatar.ant-avatar-lg.ant-avatar-circle.ant-avatar-icon {
+  line-height: 42px;
+  background-color: transparent;
+  border: 1px solid #e6ebf1;
+  cursor: pointer;
+}
+
+#light .ant-space.ant-space-horizontal.ant-space-align-center.tokenProfile {
+  justify-content: start;
+}
+
+#dark .ant-space.ant-space-horizontal.ant-space-align-center.tokenProfile {
+  justify-content: start;
+}
+
+#dark .ant-btn.ant-btn-default.btnDateChart {
+  background-color: #1d1d21;
+  color: #868990;
+  font-weight: 700;
+  border: none;
+  border-radius: 8px;
+}
+
+#light .ant-btn.ant-btn-default.btnDateChart {
+  background-color: #fff;
+  color: #868990;
+  font-weight: 700;
+  border: none;
+  border-radius: 8px;
+}
+
+#light .ant-btn.ant-btn-default.btnDateChart:hover {
+  background-color: #e6ebf1;
+}
+
+#dark .ant-btn.ant-btn-default.btnDateChart:hover {
+  background-color: #29292c;
+}
+
+#dark .ant-space.ant-space-horizontal.ant-space-align-center {
+  width: 100%;
+  justify-content: space-between;
+}
+
+#light .ant-space.ant-space-horizontal.ant-space-align-center {
+  width: 100%;
+  justify-content: space-between;
+}
+
+#dark .ant-btn.ant-btn-default.btnChartConfig {
+  background-color: transparent;
+  color: #fff;
+  font-weight: 700;
+  border: 1px solid #2d2d32;
+  border-radius: 8px;
+}
+
+#light .ant-btn.ant-btn-default.btnChartConfig {
+  background-color: transparent;
+  color: #000;
+  font-weight: 700;
+  border: 1px solid #e6ebf1;
+  border-radius: 8px;
+}
+
+#dark .ant-space.ant-space-vertical.tess {
+  width: 100%;
+}
+
+#light .ant-space.ant-space-vertical.tess {
+  width: 100%;
+}
+
+#dark .ant-table-wrapper.tableUnderlyingToken .ant-spin-nested-loading .ant-spin-container .ant-table .ant-table-container .ant-table-content .ant-table-cell{
+    background-color: #16161A;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+#light .ant-table-wrapper.tableUnderlyingToken .ant-spin-nested-loading .ant-spin-container .ant-table .ant-table-container .ant-table-content .ant-table-cell{
+    background-color: #fafafb;
+    border: none;
+    cursor: pointer;
+}
+
+#light .ant-table-wrapper.tableUnderlyingToken .ant-spin-nested-loading .ant-spin-container .ant-table .ant-table-container .ant-table-content .ant-table-tbody .ant-table-row.ant-table-row-level-0  .ant-table-cell.ant-table-cell-row-hover{
+background-color: #e6ebf1;
+}
+
+#dark .ant-table-wrapper.tableUnderlyingToken .ant-spin-nested-loading .ant-spin-container .ant-table .ant-table-container .ant-table-content .ant-table-tbody .ant-table-row.ant-table-row-level-0  .ant-table-cell.ant-table-cell-row-hover{
+background-color: #29292c;
+}
+
+@media screen and (width < 993px) {
+  #light .ant-layout-content.detailContent {
+    grid-template-columns: none;
+  }
+
+  #dark .ant-layout-content.detailContent {
+    grid-template-columns: none;
+  }
+
+  #light .ant-space.ant-space-vertical.ant-space-align-start.tradeForm {
+    display: none;
+  }
+
+  #dark .ant-space.ant-space-vertical.ant-space-align-start.tradeForm {
+    display: none;
+  }
+}

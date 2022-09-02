@@ -4,12 +4,27 @@
   background-color: transparent;
 }
 
-#dark .ant-card.ant-card-bordered.swapCard{
-background-color: #1d1d21;
-margin-top: 4px;
+#light .ant-card.ant-card-bordered {
+  border: 1px solid #e6ebf1;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+#dark .ant-card.ant-card-bordered.swapCard {
+  background-color: #1d1d21;
+  margin-top: 4px;
+}
+
+#light .ant-card.ant-card-bordered.swapCard {
+  background-color: #f5f5f7;
+  margin-top: 4px;
 }
 
 #dark div.ant-card-head {
+  border: none;
+}
+
+#light div.ant-card-head {
   border: none;
 }
 
@@ -18,26 +33,69 @@ margin-top: 4px;
   border: none;
 }
 
+#light .ant-btn.ant-btn-default.ant-dropdown-trigger {
+  background-color: transparent;
+  border: none;
+  text-align: start;
+}
+
 #dark .ant-space.ant-space-horizontal.ant-space-align-center {
   color: #fff;
 }
 
+#light .ant-space.ant-space-horizontal.ant-space-align-center {
+  color: #000;
+}
+
+
 #dark .ant-card-extra a {
   color: #fff;
+}
+
+#light .ant-card-extra a {
+  color: #000;
 }
 
 #dark .ant-card-body {
   color: #fff;
 }
 
+#light .ant-card-body {
+  color: #000;
+}
+
 #dark .ant-input-number-input {
   text-align: right;
+  color: #fff;
   /* background-color: transparent; */
+}
+
+#light .ant-input-number-input {
+  text-align: right;
+  color: #000;
 }
 
 #dark .ant-input-number {
   background-color: transparent;
   color: #fff;
+}
+
+#light .ant-input-number {
+  background-color: transparent;
+  color: #fff;
+}
+
+#dark .ant-select.payWithSelect.ant-select-single.ant-select-show-arrow
+  .ant-select-selector {
+  background-color: transparent;
+  border: none;
+}
+
+#light .ant-select.payWithSelect.ant-select-single.ant-select-show-arrow
+  .ant-select-selector {
+  background-color: transparent;
+  border: none;
+  height: 46px;
 }
 
 #dark .ant-btn.ant-btn-primary.ant-btn-block.buttonSwap:disabled {
@@ -48,9 +106,17 @@ margin-top: 4px;
   font-weight: bold;
 }
 
+#light .ant-btn.ant-btn-primary.ant-btn-block.buttonSwap:disabled {
+  background-color: #264688;
+  margin-top: 24px;
+  color: #93b3f5;
+  border: none;
+  font-weight: bold;
+}
+
 #dark .ant-btn.ant-btn-circle.ant-btn-default {
   background-color: #1d1d21;
-  color:#70737b;
+  color: #70737b;
   border-radius: 20px;
   border: 4px solid #16161a;
   position: absolute;
@@ -68,74 +134,9 @@ margin-top: 4px;
   justify-content: center;
 }
 
-#dark .ant-input-number.ant-input-number-borderless{
-width: 290px;
-}
-
-#dark .ant-input-number.ant-input-number-borderless{
-width: 290px;
-font-size: 24px;
-}
-
-#dark .ant-typography.textSwap{
-  color: #fff;
-}
-
-#light .ant-card.ant-card-bordered {
-  border: 1px solid #e6ebf1;
-  border-radius: 8px;
-  background-color: #fff;
-}
-
-#light div.ant-card-head {
-  border: none;
-}
-
-#light .ant-btn.ant-btn-default.ant-dropdown-trigger {
-  background-color: transparent;
-  border: none;
-}
-
-#light .ant-space.ant-space-horizontal.ant-space-align-center {
-  color: #000;
-}
-
-#light .ant-card-extra a {
-  color: #000;
-}
-
-#light .ant-card-body {
-  color: #000;
-}
-
-#light .ant-input-number-input {
-  text-align: right;
-}
-
-#light .ant-btn.ant-btn-default.ant-dropdown-trigger {
-  text-align: start;
-}
-
-#light .ant-card.ant-card-bordered{
-  background-color: #fff;
-}
-
-#light .ant-card.ant-card-bordered.swapCard{
-background-color: #f5f5f7;
-margin-top: 4px;
-}
-
-#light .ant-btn.ant-btn-primary.ant-btn-block.buttonSwap:disabled {
-  background-color: #264688;
-  margin-top: 24px;
-  color: #93b3f5;
-  border: none;
-  font-weight: bold;
-}
-
 #light .ant-btn.ant-btn-circle.ant-btn-default {
   background-color: #fff;
-  color:#70737b;
+  color: #70737b;
   border-radius: 20px;
   border: 4px solid #fafafa;
   position: absolute;
@@ -153,11 +154,40 @@ margin-top: 4px;
   justify-content: center;
 }
 
-#light .ant-input-number.ant-input-number-borderless{
-width: 290px;
-font-size: 24px;
+#dark .ant-input-number.ant-input-number-borderless {
+  width: 290px;
+  font-size: 24px;
 }
 
-#light .ant-typography.textSwap{
+#light .ant-input-number.ant-input-number-borderless {
+  width: 290px;
+  font-size: 24px;
+}
+
+#dark .ant-typography.textSwap {
+  color: #fff;
+}
+
+#light .ant-typography.textSwap {
+  color: #000;
+}
+
+#dark
+  .ant-select-focused:not(.ant-select-disabled).ant-select:not(.ant-select-customize-input)
+  .ant-select-selector {
+  box-shadow: none;
+}
+
+#light
+  .ant-select-focused:not(.ant-select-disabled).ant-select:not(.ant-select-customize-input)
+  .ant-select-selector {
+  box-shadow: none;
+}
+
+#dark .ant-typography.chainText {
+  color: #fff;
+}
+
+#light .ant-typography.chainText {
   color: #000;
 }

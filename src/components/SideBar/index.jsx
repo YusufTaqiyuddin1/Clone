@@ -27,16 +27,16 @@ function getItem(label, key, icon, children) {
 }
 
 export default function SideBar() {
-  const [collapsed, setCollapsed] = useState(true);
+  // const [collapsed, setCollapsed] = useState(true);
 
-  const changeMenu = () => {
-    if (window.width() < 1200) {
-      setCollapsed(!collapsed);
-    } else {
-      setCollapsed(collapsed);
-    }
-  };
-  window.addEventListener("resize", changeMenu);
+  // const changeMenu = () => {
+  //   if (window.width() < 1200) {
+  //     setCollapsed(!collapsed);
+  //   } else {
+  //     setCollapsed(collapsed);
+  //   }
+  // };
+  // window.addEventListener("resize", changeMenu);
 
   const [Wallet] = useState({
     // , setWallet
@@ -101,7 +101,6 @@ export default function SideBar() {
       <Menu
         className="siderMenu"
         mode="inline"
-        inlineCollapsed={collapsed}
         // defaultSelectedKeys={["1"]}
         items={Wallet.items}
       />
